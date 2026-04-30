@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAAAAAAAI</title>
     <link rel="stylesheet" href="Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+            rel="stylesheet">
+
 </head>
 
 <body>
@@ -13,10 +24,10 @@
         <img class="img-logo" src="foto1.png" alt="">
         <nav>
             <ul class="ul-nav">
-                <li><a href="http://">About</a></li>
-                <li><a href="http://">Products</a></li>
-                <li><a href="https://">Reviews</a></li>
-                <li><a href="http://">Contact</a></li>
+                <li><a href="#O_history">About</a></li>
+                <li><a href="#our_collection">Products</a></li>
+                <li><a href="#what">Reviews</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
         <button class="btn-cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -28,32 +39,40 @@
             </svg><span class="cart">Cart</span></button>
     </header>
     <div class="texto1">
+        <div class="opacidade"></div>
         <h1>
             Indulge in the art of brownies
         </h1>
         <p>handcraft with love, baked to perfection</p>
-        <button>Shop Now</button>
+        <a href="#our_collection">Shop Now</a>
     </div>
-    <div class="Our_history">
-        <div class="texto2">
-            <h2>
-                Our Story
-            </h2>
-            <p> Our Story
-                At Brownie Bliss, we believe that the perfect brownie is more than just a dessert—it's an experience.
-                Our journey began in a small kitchen with a simple mission: to create the most indulgent, artisanal
-                brownies using only the finest ingredients.
-            <p> Every brownie is handcrafted with premium Belgian chocolate,
-                farm-fresh eggs, and pure vanilla extract. We take pride in our slow-baking process, which allows each
-                batch to develop its signature fudgy texture and rich, complex flavors.</p>
-            <p> From our kitchen to your table,
-                we pour love and dedication into every creation. Each bite tells a story of passion, quality, and the
-                timeless art of baking done right.</p>
+    <section id="O_history">
+        <div class="Our_history">
+            <div class="texto2">
+                <h2>
+                    Our Story
+                </h2>
+                <p> Our Story
+                    At Brownie Bliss, we believe that the perfect brownie is more than just a dessert—it's an
+                    experience.
+                    Our journey began in a small kitchen with a simple mission: to create the most indulgent, artisanal
+                    brownies using only the finest ingredients.</p>
+                <p> Every brownie is handcrafted with premium Belgian chocolate,
+                    farm-fresh eggs, and pure vanilla extract. We take pride in our slow-baking process, which allows
+                    each
+                    batch to develop its signature fudgy texture and rich, complex flavors.</p>
+                <p> From our kitchen to your table,
+                    we pour love and dedication into every creation. Each bite tells a story of passion, quality, and
+                    the
+                    timeless art of baking done right.</p>
+                    <img class="linha" src="linha.jpg" alt="">
+            </div>
+            <img src="image2.jpg" alt="">
         </div>
-        <img src="image2.jpg" alt="">
-    </div>
-    <img class="linha" src="linha.jpg" alt="">
-    <!-- Professora por favor me ajudar a fazer uma linha funcional tá dificil pq quando eu dou zoom ele negoça todoooo-->
+        
+    </section>
+    <!-- Professora por favor me ajudar a fazer uma linha funcional tá dificil pq quando eu dou zoom ele negoça todoooo, background-image -> cores dps -->
+    <section id="our_collection"></section>
     <div class="our_collection">
         <h2>Our Collection</h2>
         <p>Explore our artisanal brownie varieties, each crafted with premium ingredients and</p>
@@ -97,7 +116,7 @@
                 <button>Add to Cart</button>
             </div>
         </div>
-         <div class="classic">
+        <div class="classic">
             <img src="image6.jpg" alt=""><!--professora como que faz o border-radius ficar só no topo??-->
             <div class="texto3">
                 <h3>Matcha Bliss</h3>
@@ -105,15 +124,223 @@
                 <button>Add to Cart</button>
             </div>
         </div>
-         <div class="classic">
+        <div class="classic">
             <img src="image7.jpg" alt=""><!--professora como que faz o border-radius ficar só no topo??-->
             <div class="texto3">
                 <h3>Salted Caramal</h3>
                 <p>Gourmet brownie with ribbons of salted caramel and chocolate chunks.</p>
                 <button>Add to Cart</button>
             </div>
-        </section>
+    </section>
+    <section id="what" class="what">
+        <h2>What our Customers say</h2>
+        <p>Don't take our word for ir -- hear from brownie lovers who've experience Brownie Bliss.</p>
+        <img class="linha" src="linha.jpg" alt="">
+        <div class="row-flex">
+            <div class="comem">
+                <div class="estrela">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
 
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                </div>
+                <p>"Absolutely divine! The Salted Caramel brownie is pure heaven. I've never tasted anything so rich and
+                    perfectly
+                    balanced."
+                </p>
+                <div class="pessoas">
+                    <img src="imageM.jpg" alt="">
+                    <p>Sarah Johnson</p> <!--professora como que faz pro nome descer aqui no texto?-->
+                </div>
+
+            </div>
+            <div class="comem">
+                <div class="estrela">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+
+                    </svg>
+                </div>
+                <p>"The quality is unmatched. Each brownie is a work of art. My go-to for special occasions and gifts!"
+
+                </p>
+                <div class="pessoas">
+                    <img src="imageH.jpg" alt="">
+                    <p>Michael Chen </p>
+                </div>
+            </div>
+            <div class="comem">
+                <div class="estrela">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+            
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+            
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+            
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+            
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-star w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" aria-hidden="true">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+            
+                    </svg>
+                </div>
+                <p>"Brownie Bliss has ruined all other brownies for me! The Matcha Bliss is innovative and delicious. Highly recommend!"
+
+                </p>
+                <div class="pessoas">
+                    <img src="imageM2.jpg" alt="">
+                    <p>Emily Rodriguez </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<footer>
+
+    <section id="Contact" class="handcraft">
+        <img src="foto1.png" alt="">
+        <p> Handcrafted artisanal brownies made with love and premium ingredients.
+        </p>
+    </section>
+    <section class="contact_us">
+        <h3>Contact Us</h3>
+        <p>Email: hello@browniebliss.com
+        </p>
+        <p>Phone: +1 (555) 123-4567
+        </p>
+        <p>Mon - Sat: 9AM - 7PM
+        </p>
+    </section>
+    <section class="follow_us">
+        <h3> Follow us</h3>
+        <div class="div-links">
+            <a href="http://">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-instagram w-6 h-6 text-white" aria-hidden="true">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg></a>
+            <a href="http://">
+                <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" widht="24" height="24">
+                    <path
+                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z">
+                    </path>
+                </svg>
+            </a>
+            <a href="http://">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-message-circle w-6 h-6 text-white" aria-hidden="true">
+                    <path
+                        d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+    </section>
+</footer>
 
 </html>
