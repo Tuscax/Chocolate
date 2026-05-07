@@ -207,32 +207,23 @@ header>button {
 }
 
 .options {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 64px 120px;
 }
 
-.options2 {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
 
-.texto3>a:hover {
-  color: #ffffff;
-  background-color: #D4Af37;
-}
 
 .classic {
-  position: relative;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   transition-duration: 0.8s;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.207);
-  border-radius: 20%;
+  border-radius: 16px;
+  
 }
 
 .classic:hover {
@@ -241,7 +232,7 @@ header>button {
 }
 
 .classic>img {
-  width: 400px;
+  object-fit: cover;
   height: 256px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
@@ -261,7 +252,7 @@ header>button {
 
 .texto3>h3 {
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 24px;
   color: #4a3428;
 }
 
@@ -269,16 +260,22 @@ header>button {
   margin-top: 10px;
   font-size: 16px;
   color: #6b5d52;
+  margin-bottom: 25px;
 }
 
-.texto3>a {
-  margin-top: 25px;
-  padding: 5px 120px;
+.texto3>button {
+  width: 100%;
+  padding: 8px 12px;
   text-align: center;
   border-radius: 20px;
   background-color: #4a3428;
   color: #fff9f0;
-  font-size: 20px;
+  font-size: 16px;
+}
+.texto3>button:hover, .btn-cart:hover {
+  color: #ffffff;
+  background-color: #D4Af37;
+  cursor: pointer;
 }
 
 .what {
