@@ -376,8 +376,12 @@ footer>div {
 }
 
 .handcraft {
-  font-size: 20px;
+  font-size: 16px;
   color: #fff9f0;
+  width: 270px;
+}
+.padding {
+  padding: 24px 36px;
 }
 
 .contact_us {
@@ -385,6 +389,7 @@ footer>div {
   flex-direction: column;
   align-items: start;
   color: #fff9f0;
+  width: 395px;
 }
 
 .contact_us>h3,
@@ -397,7 +402,7 @@ p {
 }
 
 .contact_us>p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .follow_us>h3 {
