@@ -422,24 +422,19 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
-
 }
-
 .copy {
   margin-top: 0;
- color: #a89e98; 
- display: flex;
- flex-direction: column;
- align-items: center  ;
- margin-bottom: 40px;
-}
-.copy>div {
-background-color: #6b5d52;
-height: 1px;
-width: 85vw;
-margin-bottom: 40px;
-}
-.copy>p {
-  margin-bottom: 40px;
+  color: #a89e98;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
+.copy>div {
+  background-color: #6b5d52;
+  height: 1px;
+  width: 85vw;
+  margin-bottom: 40px;
+}
