@@ -12,6 +12,7 @@ main {
 }
 
 body {
+  background-color: #faf7f2;
 
   width: 100vw;
 }
@@ -32,10 +33,10 @@ header {
   background-color: #fff9f0e7;
   padding: 16px 200px;
   font-family: sans-serif;
-  position: sticky  ;
+  position: sticky;
   top: 0;
   z-index: 99;
-  backdrop-filter: blur(8px) ;
+  backdrop-filter: blur(8px);
   border: 1px solid #4a34280f;
   box-shadow: 0 1px 4px 0 #0000008b;
 }
@@ -174,7 +175,7 @@ header>button {
 }
 
 .linha {
-  margin-top: 20px ;
+  margin-top: 20px;
   margin-bottom: 20px;
   background: linear-gradient(to right, #d4af37, #4a3428);
   width: 96px;
@@ -213,8 +214,6 @@ header>button {
   padding: 64px 120px;
 }
 
-
-
 .classic {
   margin-top: 30px;
   display: flex;
@@ -223,11 +222,13 @@ header>button {
   transition-duration: 0.8s;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.207);
   border-radius: 16px;
-  
+  position: relative;
+  overflow: hidden;
 }
 
 .classic:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 35px -5px rgba(0, 0, 0, 0.457);
   transition-duration: 0.8s;
 }
 
@@ -236,11 +237,31 @@ header>button {
   height: 256px;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.207);
+  transition-duration: 0.5s;
 }
-.amarelo:hover {
-  background-color: #D4Af37;
+
+.classic:hover>img,
+.classic:hover>.yellow {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
+
+.yellow {
+  transition-duration: 0.5s;
+  top: 0;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  position: absolute;
+  z-index: 1;
+  height: 256px;
+  width: 400px;
+}
+
+.yellow:hover {
+  transition-duration: 0.8s;
+  background-image: linear-gradient(to top, #d4af3743, #d4af3700);
+}
+
 .texto3 {
   padding: 24px;
   background-color: #ffffff;
@@ -272,7 +293,9 @@ header>button {
   color: #fff9f0;
   font-size: 16px;
 }
-.texto3>button:hover, .btn-cart:hover {
+
+.texto3>button:hover,
+.btn-cart:hover {
   color: #ffffff;
   background-color: #D4Af37;
   cursor: pointer;
@@ -283,24 +306,25 @@ header>button {
   justify-content: space-around;
   margin-top: 120px;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  padding: 80px 64px;
 }
 
 .what>h2 {
   color: #4a3428;
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .what>p {
   color: #6b5d52;
-  font-size: 21px;
+  font-size: 16px;
   margin-top: 18px;
+  text-align: center;
 }
 
-.what>img {
-  margin-top: 20px;
+.what>.linha {
+  margin-bottom: 48px;
 }
-
 .row-flex {
   display: flex;
   flex-direction: row;
@@ -309,30 +333,37 @@ header>button {
 }
 
 .comem {
-  margin-top: 20px;
   display: flex;
   height: 244px;
   width: 400px;
-  background-color: #fff9f0;
+  background-color: #f7f1e7;
   border-radius: 5%;
   padding: 32px;
   flex-direction: column;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.207);
 }
-
+.comem:hover {
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.207);
+  transition-duration: 0.5s;
+}
 .estrela {
   display: flex;
   flex-direction: row;
 }
 
-.estrela>svg {
-
-  color: #D4Af37;
-  margin-bottom: 16px;
-  fill: #D4Af37;
+.estrela>img {
+    margin-bottom: 16px;
+    color: #D4Af37;
+    fill: #D4Af37;
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
 }
+
 
 .comem>p {
   color: #6b5d52;
+  margin-bottom: 24px;
 }
 
 .pessoas {
@@ -344,23 +375,26 @@ header>button {
 
 .pessoas>p {
   color: #6b5d52;
+  margin-bottom: 00;
 }
 
 .pessoas>img {
   height: 48px;
   width: 48px;
-  border: 2px solid #D4Af37;
+  border: 3px solid #D4Af37;
   border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 
 footer>div {
-  margin-top: 40px;
-  display: flex;
+  display: grid;
   justify-content: space-around;
   background-color: #4a3428;
   padding-top: 40px;
-  
+  grid-template-columns: repeat(3, 1fr);
+
 }
 
 .handcraft>img {
@@ -375,10 +409,11 @@ footer>div {
 .handcraft {
   font-size: 16px;
   color: #fff9f0;
-  width: 270px;
+  width: 400px;
 }
+
 .padding {
-  padding: 24px 36px;
+  padding: 64px
 }
 
 .contact_us {
@@ -425,6 +460,7 @@ p {
   flex-wrap: nowrap;
   gap: 10px;
 }
+
 .copy {
   margin-top: 0;
   color: #a89e98;
